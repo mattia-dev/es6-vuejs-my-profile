@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 </head>
 
 <body>
@@ -26,8 +27,8 @@
         </div>
 
         <div class="new-post">
-            <textarea placeholder="A cosa stai pensando?"></textarea>
-            <button class="send">CREA</button>
+            <textarea v-model="newPostText" placeholder="A cosa stai pensando?"></textarea>
+            <button class="send" @click="createPost()">CREA</button>
         </div>
 
         <div class="post-list">
