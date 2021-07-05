@@ -60,7 +60,7 @@
     font-weight: bold;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    cursor: pointer;
+
 }
 
 
@@ -100,4 +100,13 @@
 
 .post-text {
     margin: 15px 0;
+}
+
+.top-post-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-post-container i {
+    cursor: pointer;
 }

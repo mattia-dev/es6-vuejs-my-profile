@@ -44,7 +44,10 @@ new Vue(
                         
                     this.newPostText = "";
                 }
-            }
+            },
+            deletePost: function (index) {
+                this.myProfile.posts.splice(index, 1);
+            },
         }
 
     }
